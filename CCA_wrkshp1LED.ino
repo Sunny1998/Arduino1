@@ -1,15 +1,26 @@
 //LED blinking program
+int a=8;
+int b=7;
+int c=6;
 void setup() {
-pinMode(13,OUTPUT);  
-
+  // put your setup code here, to run once:
+pinMode(a,OUTPUT);
+pinMode(b,OUTPUT);
+pinMode(c,OUTPUT);
 }
 
 void loop() {
-  digitalWrite(13, HIGH);
-  delay(1000);
-  digitalWrite(13,LOW);
-  delay(1000);
-  
-  
-
+  // put your main code here, to run repeatedly:
+digitalWrite(a,HIGH);
+delay(100);
+digitalWrite(a,LOW);
+delay(200);
+digitalWrite(b,HIGH);
+delay(100);
+digitalWrite(b,LOW);
+delay(200);
+digitalWrite(c,HIGH);
+delay(100);
+digitalWrite(c,LOW);
+delay(200);
 }
